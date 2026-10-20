@@ -1,5 +1,5 @@
 {
-  "name": "devops-pipeline",
+  "name": "@umaralam9002/devops-pipeline",
   "version": "1.2.0",
   "description": "Renders the course Markdown sources into HTML pages.",
   "main": "tools/build.js",
@@ -19,5 +19,13 @@
   "license": "ISC",
   "dependencies": {
     "markdown-it": "^15.0.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/umaralam9002/devops-project-royal.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   }
 }
+
