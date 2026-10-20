@@ -1,6 +1,6 @@
 {
   "name": "@umaralam9002/devops-pipeline",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Renders the course Markdown sources into HTML pages.",
   "main": "tools/build.js",
   "bin": {
@@ -28,4 +28,3 @@
     "registry": "https://npm.pkg.github.com"
   }
 }
-
