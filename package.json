@@ -2,6 +2,9 @@
   "name": "@talhakhalid1112003-rgb/devops-pipeline",
   "version": "1.1.1",
   "description": "DevOps Pipeline Lab 05",
+  "bin": {
+    "devops-build": "tools/build.js"
+  },
   "scripts": {
     "test": "node test/build.test.js"
   },
