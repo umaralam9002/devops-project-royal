@@ -16,6 +16,3 @@ venv/
 node_modules/
 out/
 *.tgz
-node_modules/
-out/
-*.tgz
