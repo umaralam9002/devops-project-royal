@@ -1,3 +1,4 @@
+
 {
   "name": "@umaralam9002/devops-pipeline",
   "version": "1.2.1",
@@ -6,19 +7,9 @@
   "bin": {
     "devops-build": "tools/build.js"
   },
-  "files": [
-    "tools/",
-    "README.md"
-  ],
   "scripts": {
     "build": "node tools/build.js",
     "test": "node --test"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "markdown-it": "^15.0.3"
   },
   "repository": {
     "type": "git",
@@ -26,5 +17,14 @@
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
-  }
+  },
+  "license": "ISC",
+  "dependencies": {
+    "markdown-it": "^15.0.3"
+  },
+  "files": [
+    "tools/",
+    "README.md"
+  ]
 }
+
