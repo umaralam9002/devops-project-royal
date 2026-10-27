@@ -22,3 +22,4 @@ fs.writeFileSync(dest, `<!doctype html>
 <title>${title}</title>
 ${body}</html>
 `);
+// Lab 05: demonstrate immutable package versions.
