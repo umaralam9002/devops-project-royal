@@ -24,3 +24,6 @@ test('every page has content and is not empty', () => {
     assert.ok(stats.size > 0, `${p} is empty (0 bytes)`);
   }
 });
+test('deliberate breakpoint failure', () => {
+  assert.strictEqual(1, 2, 'Deliberate failure for lab demonstration');
+});
