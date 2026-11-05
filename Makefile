@@ -35,10 +35,16 @@ lint: node_modules ## static analysis: seconds, so it runs first
 test: build
 	@node --test
 
+coverage: build ## the tests again, writing coverage/lcov.info for SonarQube
+	@mkdir -p coverage
+	node --test --experimental-test-coverage \
+		--test-reporter=spec --test-reporter-destination=stdout \
+		--test-reporter=lcov --test-reporter-destination=coverage/lcov.info
+
 package: test
 	npm pack
 
 clean:
-	@rm -rf $(OUT_DIR) *.tgz
+	@rm -rf $(OUT_DIR) coverage *.tgz
 
 ci: clean deps check lint test package
