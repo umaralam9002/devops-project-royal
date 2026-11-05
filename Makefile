@@ -3,7 +3,7 @@ OUT_DIR := out
 SOURCES := $(wildcard $(SRC_DIR)/*.md)
 OUTPUTS := $(patsubst $(SRC_DIR)/%.md,$(OUT_DIR)/%.html,$(SOURCES))
 
-.PHONY: all check build test clean ci deps package
+.PHONY: all check build test lint clean ci deps package
 
 all: test
 
@@ -29,6 +29,9 @@ check:
 
 build: $(OUTPUTS)
 
+lint: node_modules ## static analysis: seconds, so it runs first
+	npm run --silent lint
+
 test: build
 	@node --test
 
@@ -38,4 +41,4 @@ package: test
 clean:
 	@rm -rf $(OUT_DIR) *.tgz
 
-ci: clean deps check test package
+ci: clean deps check lint test package
