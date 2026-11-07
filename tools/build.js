@@ -3,7 +3,6 @@
 // Called by the Makefile: npm run build -- src/notes.md out/notes.html
 const fs = require('fs');
 const path = require('path');
-const unusedLimit = 100;
 const MarkdownIt = require('markdown-it');
 
 const md = new MarkdownIt({ html: false, linkify: true, typographer: true });
